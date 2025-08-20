@@ -24,12 +24,10 @@ public class AuthController : ControllerBase
         }
         return Unauthorized("Credenciais inválidas");
     }
-
     private bool IsValidUser(string username, string password)
     {
-        return username == "macoratti" && password == "123456";
+        return username == "felipe" && password == "2529";
     }
-
 
     [HttpGet("/user")]
     [Authorize]
